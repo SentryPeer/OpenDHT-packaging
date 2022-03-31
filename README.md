@@ -1,6 +1,6 @@
 # OpenDHT-packaging
 
-Debian, Homebrew and Alpine Linux packaging for OpenDHT
+Debian, Homebrew and Alpine Linux packaging for [OpenDHT](https://github.com/savoirfairelinux/opendht) to use with [SentryPeer](https://github.com/SentryPeer/SentryPeer)
 
 ## Debian
 
