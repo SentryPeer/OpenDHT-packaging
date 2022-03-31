@@ -2,8 +2,8 @@ opendht (2.4.0-1) unstable; urgency=medium
 
   * New version and C bindings
 
- -- Gavin Henry <ghenry@sentrypeer.org>  Thu, 31 Mar 2022 14:00:00 
-
+ -- Gavin Henry <ghenry@sentrypeer.org>  Thu, 31 Mar 2022 14:00:00 +0000
+ 
 opendht (2.3.1-1) unstable; urgency=medium
 
   [ Amin Bandali ]
