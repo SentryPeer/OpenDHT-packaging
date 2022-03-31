@@ -1,0 +1,3 @@
+#! /usr/bin/dh-exec
+usr/bin/dhtnode
+debian/dhtnode.conf => etc/default/dhtnode

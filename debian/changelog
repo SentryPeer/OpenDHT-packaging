@@ -1,0 +1,228 @@
+opendht (2.4.0-1) unstable; urgency=medium
+
+  * New version and C bindings
+
+ -- Gavin Henry <ghenry@sentrypeer.org>  Thu, 31 Mar 2022 14:00:00 
+
+opendht (2.3.1-1) unstable; urgency=medium
+
+  [ Amin Bandali ]
+  * d/watch: Update to version=4 and use newly-suggested opts format
+    in the current uscan(1) manual for GitHub repositories.  This is
+    motivated in part by a change in devscripts-2.21.5 that makes
+    uscan die when filenamemangle fails.
+
+  [ Alexandre Viau ]
+  * New upstream version.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 20 Nov 2021 23:59:14 -0500
+
+opendht (2.1.10-1) unstable; urgency=medium
+
+  * New upstream version. (Closes: 978562)
+
+ -- Alexandre Viau <aviau@debian.org>  Fri, 01 Jan 2021 14:02:19 -0500
+
+opendht (2.1.9.5-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * New upstream version.
+
+  [ Amin Bandali ]
+  * Bump debhelper compat level up to 10.
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 08 Dec 2020 17:56:05 -0500
+
+opendht (2.1.6-1) unstable; urgency=medium
+
+  [ Amin Bandali ]
+  * New upstream version.
+  * Enable OpenDHT proxy features.
+
+  [ Alexandre Viau ]
+  * Rules-Requires-Root: no.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 10 Oct 2020 16:35:04 -0400
+
+opendht (2.1.4-1) unstable; urgency=medium
+
+  * New upstream version.
+  * dhtnode.conf: remove -v. (Closes: #959226)
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 15 Aug 2020 12:42:20 -0400
+
+opendht (2.1.1-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Depend on librestinio-dev, libasio-dev.
+  * Refresh patches.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 16 May 2020 13:08:04 -0400
+
+opendht (1.8.1-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 05 Jan 2019 21:57:00 -0500
+
+opendht (1.8.0-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 10 Dec 2018 20:15:28 -0500
+
+opendht (1.7.4-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 18 Aug 2018 15:51:19 -0400
+
+opendht (1.7.2-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Fix maintainer-script-should-not-use-recursive-chown-or-chmod.
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 26 Jun 2018 18:08:36 -0400
+
+opendht (1.6.0-1) unstable; urgency=medium
+
+  * d/watch: exclude release candidates.
+  * d/copyright: fix insecure-copyright-format-uri.
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 27 Feb 2018 06:11:11 +0000
+
+opendht (1.5.0-3) unstable; urgency=medium
+
+  * Build with msgpack-c v2 API.
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 01 Feb 2018 17:47:24 +0000
+
+opendht (1.5.0-2) unstable; urgency=medium
+
+  * Move to salsa.debian.org.
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 28 Dec 2017 17:09:51 -0500
+
+opendht (1.5.0-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 23 Nov 2017 19:44:27 -0500
+
+opendht (1.4.1-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Use msgpack v1 API.
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 15 Nov 2017 20:54:42 -0500
+
+opendht (1.3.6-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Alexandre Viau <aviau@debian.org>  Fri, 25 Aug 2017 16:44:04 -0400
+
+opendht (1.3.5-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 02 Aug 2017 15:41:36 -0400
+
+opendht (1.3.4-3) unstable; urgency=medium
+
+  * Remove unneeded multiarch.patch.
+
+ -- Alexandre Viau <aviau@debian.org>  Sun, 02 Jul 2017 14:35:50 -0400
+
+opendht (1.3.4-2) unstable; urgency=medium
+
+  * dhtnode.service: restart on-failure
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 01 Jul 2017 15:20:42 -0400
+
+opendht (1.3.4-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * dhtnode: include systemd service.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 01 Jul 2017 14:51:02 -0400
+
+opendht (1.3.3-2) unstable; urgency=medium
+
+  * Install CMakeFiles. (Closes: #866586)
+
+ -- Alexandre Viau <aviau@debian.org>  Fri, 30 Jun 2017 16:03:24 -0400
+
+opendht (1.3.3-1) unstable; urgency=medium
+
+  * New upstream snapshot. (Closes: #866078)
+  * Refresh patches.
+  * Remove use-debian-argon2.patch.
+  * Remove python bindings mention.
+  * Bump Standards-Version to 4.0.0.
+  * Build-Depend on pkg-config.
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 27 Jun 2017 18:42:38 -0400
+
+opendht (1.2.1~dfsg1-8) unstable; urgency=medium
+
+  * dev package: Add library dependencies (Closes: #849561).
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 28 Dec 2016 17:11:11 -0500
+
+opendht (1.2.1~dfsg1-7) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Import Gianfranco's work (Closes: #843788).
+
+  [ Gianfranco Costamagna ]
+  * Multiarchify the package.
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 09 Nov 2016 11:28:54 -0500
+
+opendht (1.2.1~dfsg1-6) unstable; urgency=medium
+
+  * libopendht-dev now breaks+replaces libopendht1 (Closes: #843680)
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 08 Nov 2016 13:13:44 -0500
+
+opendht (1.2.1~dfsg1-5) unstable; urgency=medium
+
+  * Don't ship libopendht1. Debian policy allows for shipping
+    only static libraries since OpenDHT's API is not stable
+    enough.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 07 Nov 2016 13:14:31 -0500
+
+opendht (1.2.1~dfsg1-4) unstable; urgency=medium
+
+  * Add libopendht.shlibs.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 05 Nov 2016 01:00:46 -0400
+
+opendht (1.2.1~dfsg1-3) unstable; urgency=medium
+
+  * Remove pkg-kde-tools dependency.
+
+ -- Alexandre Viau <aviau@debian.org>  Fri, 04 Nov 2016 16:10:56 -0400
+
+opendht (1.2.1~dfsg1-2) unstable; urgency=medium
+
+  * Link against argon2.
+
+ -- Alexandre Viau <aviau@debian.org>  Fri, 04 Nov 2016 03:29:16 -0400
+
+opendht (1.2.1~dfsg1-1) unstable; urgency=medium
+
+  * Remove symbols file.
+  * Refresh use-debian-argon2.patch.
+  * Remove build_versioned_shared_library.patch.
+  * Use manpage from source.
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 29 Jun 2016 15:52:22 +0200
+
+opendht (0.6.1~dfsg1-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #809362)
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 27 Jun 2016 13:09:11 +0200

@@ -1,0 +1,4 @@
+usr/lib/*/libopendht.a
+usr/include/*
+usr/lib/*/pkgconfig/*
+usr/lib/*/cmake/opendht/*

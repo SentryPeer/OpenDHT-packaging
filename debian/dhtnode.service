@@ -1,0 +1,14 @@
+[Unit]
+Description=OpenDHT standalone node
+After=network.target
+Documentation=man:dhtnode(1)
+
+[Service]
+User=opendht
+Group=opendht
+EnvironmentFile=/etc/default/dhtnode
+ExecStart=/usr/bin/dhtnode -s $DHT_ARGS
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

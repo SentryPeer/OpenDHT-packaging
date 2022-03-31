@@ -1,0 +1,75 @@
+Source: opendht
+Section: libs
+Priority: optional
+Maintainer: Alexandre Viau <aviau@debian.org>
+Build-Depends: debhelper (>= 9.20160709),
+               cmake,
+               dh-exec,
+               pkg-config,
+               libgnutls28-dev,
+               libmsgpack-dev (>= 1.2),
+               libreadline6-dev,
+               libncurses5-dev,
+               libargon2-0-dev,
+               librestinio-dev,
+               libasio-dev,
+               libjsoncpp-dev,
+               libhttp-parser-dev,
+               libssl-dev,
+               libfmt-dev,
+               nettle-dev
+Standards-Version: 4.0.0
+Homepage: https://github.com/savoirfairelinux/opendht
+Vcs-Git: https://salsa.debian.org/debian/opendht.git
+Vcs-Browser: https://salsa.debian.org/debian/opendht
+Rules-Requires-Root: no
+
+Package: libopendht-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends},
+         libgnutls28-dev,
+         libmsgpack-dev (>= 1.2),
+         libreadline6-dev,
+         libncurses5-dev,
+         libargon2-0-dev,
+         librestinio-dev,
+         libasio-dev,
+         libjsoncpp-dev,
+         libhttp-parser-dev,
+         libssl-dev,
+         libfmt-dev,
+         nettle-dev
+Provides: libopendht-dev
+Breaks: libopendht1 (<< 1.2.1~dfsg1-6)
+Replaces: libopendht1 (<< 1.2.1~dfsg1-6)
+Multi-Arch: same
+Description: Development files for the libopendht library
+ OpenDHT is a C++17 distributed hash table implementation.
+ Feature list:
+  - Distributed shared key->value data-store
+  - Clean and powerful distributed map API with storage of
+    arbitrary binary values of up to 56 KB.
+  - Optional public key cryptography layer providing data
+    signature and encryption (using GnuTLS).
+  - IPv4 and IPv6 support.
+ .
+ This package contains the static library and headers.
+
+Package: dhtnode
+Architecture: any
+Section: net
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         adduser
+Description: OpenDHT node binary
+ OpenDHT is a C++17 distributed hash table implementation.
+ Feature list:
+  - Distributed shared key->value data-store
+  - Clean and powerful distributed map API with storage of
+    arbitrary binary values of up to 56 KB.
+  - Optional public key cryptography layer providing data
+    signature and encryption (using GnuTLS).
+  - IPv4 and IPv6 support.
+ .
+ This package contains the OpenDHT node binary.
